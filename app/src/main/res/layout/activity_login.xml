@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.auth.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_details" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/iv_info">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_100"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_logo2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Laipni lūdzam!"
+                    android:textColor="@color/textblue800"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ienāc"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/border_rectangle_edittext"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="Epasts"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/textblue800"
+                    android:textSize="@dimen/dimen_16" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/border_rectangle_edittext"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="Parole"
+                    android:inputType="text"
+                    android:padding="@dimen/dimen_15"
+                    android:textColor="@color/textblue800"
+                    android:textSize="@dimen/dimen_16" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0B5FFF"
+                android:enabled="true"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingLeft="@dimen/dimen_30"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_30"
+                android:paddingBottom="@dimen/dimen_15"
+                android:text="Pieslēgties"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                app:cornerRadius="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#EBF0FF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:layout_marginRight="@dimen/dimen_30"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="VAI"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="700"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="#EBF0FF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_rectangle"
+                    android:drawableLeft="@drawable/ic_google"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/dimen_15"
+                    android:text="Pieslēgties ar Google"
+                    android:textAlignment="center"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="500" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/border_rectangle"
+                    android:drawableLeft="@drawable/ic_fb"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/dimen_15"
+                    android:text="Pieslēgties ar Facebook"
+                    android:textAlignment="center"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="500" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/border_rectangle"
+                    android:drawableLeft="@drawable/mykoob"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/dimen_15"
+                    android:text="Pieslēgties ar Mykoob"
+                    android:textAlignment="center"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="500" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@drawable/border_rectangle"
+                    android:drawableLeft="@drawable/ekiase"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/dimen_15"
+                    android:text="Pieslēgties ar E-klase"
+                    android:textAlignment="center"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="500" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Aizmirsi paroli?"
+                    android:textColor="@color/btntextcolor"
+                    android:textFontWeight="700"
+                    android:padding="@dimen/dimen_5"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/dimen_5"
+                    android:text="Reģistrējies"
+                    android:textColor="#9098B1"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/text_13" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_10"
+    tools:context=".ui.WelcomeActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_margin="@dimen/dimen_20"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:cardElevation="@dimen/dimen_10"
+        app:cardMaxElevation="@dimen/dimen_10"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/upperlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/indicator"
+                android:background="@color/white"
+                android:overScrollMode="always" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_40"
+                app:tabMode="scrollable"
+                app:tabBackground="@drawable/d_indicator_background"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="@dimen/dimen_32"
+                app:tabMinWidth="@dimen/dimen_16"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Izlaist"
+        android:textAllCaps="false"
+        android:textColor="@color/lightgreycolor"
+        android:textSize="@dimen/text_13" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_gender"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_weight="1"
+        android:backgroundTint="#40BFFF"
+        android:enabled="true"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_30"
+        android:paddingBottom="@dimen/dimen_15"
+        android:text="Pieslēgties"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:visibility="gone"
+        app:cornerRadius="10dp" />
+</RelativeLayout>

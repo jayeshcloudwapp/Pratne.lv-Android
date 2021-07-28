@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_menu_first_white"
+        android:title="Aktuāli" />
+    <item
+        android:id="@+id/bottom_chat"
+        android:icon="@drawable/ic_menu_second"
+        android:title="Priekšmeti" />
+    <item
+        android:id="@+id/bottom_add"
+        android:icon="@drawable/ic_menu_third"
+        android:title="Burtnīca" />
+    <item
+        android:id="@+id/bottom_request"
+        android:icon="@drawable/ic_menu_fourth"
+        android:title="Saziņa" />
+
+
+</menu>

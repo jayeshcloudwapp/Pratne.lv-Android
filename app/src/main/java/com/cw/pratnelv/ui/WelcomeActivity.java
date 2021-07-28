@@ -23,7 +23,7 @@ import butterknife.OnClick;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    @BindView(R.id.view_pager)
+     @BindView(R.id.view_pager)
     ViewPager viewPager;
     @BindView(R.id.btn_gender)
     MaterialButton btn_register;
